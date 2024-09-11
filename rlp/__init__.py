@@ -27,3 +27,20 @@ from .sedes import (
 )
 
 __version__ = __version("rlp")
+
+__all__ = [
+    "__version__",
+    "sedes",
+    "decode",
+    "encode",
+    "infer_sedes",
+    "DecodingError",
+    "DeserializationError",
+    "EncodingError",
+    "RLPException",
+    "SerializationError",
+    "LazyList",
+    "decode_lazy",
+    "peek",
+    "Serializable",
+]
