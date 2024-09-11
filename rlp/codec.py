@@ -1,4 +1,7 @@
 import collections
+from typing import (
+    Any,
+)
 
 from eth_utils import (
     big_endian_to_int,
@@ -95,7 +98,7 @@ else:
             raise EncodingError(e, obj)
 
 
-def encode(obj, sedes=None, infer_serializer=True, cache=True):
+def encode(obj: Any, sedes: Any | None = None, infer_serializer=True, cache=True):
     """
     Encode a Python object in RLP format.
 
